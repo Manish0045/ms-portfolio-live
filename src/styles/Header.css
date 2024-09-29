@@ -1,0 +1,199 @@
+/* Header styles */
+.banner {
+    top: 0;
+    left: 0;
+    margin-top: -80px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    color: #fff;
+    display: flex;
+    gap: 2.5rem;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.banner__profile {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(235, 230, 230, 0.1);
+    position: relative;
+    animation: fadeInFromBackground 1s ease-out forwards;
+    z-index: 1;
+    /* Ensure the image stays behind other content */
+}
+
+@keyframes fadeInFromBackground {
+    0% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.banner__content {
+    margin-top: 30px;
+    position: relative;
+    z-index: 2;
+    animation: slideIn 1s ease-out;
+}
+
+.banner__title--l {
+    font-size: 4.5rem;
+    margin-bottom: 10px;
+    font-family: "Anta", sans-serif;
+    animation: fadeInUp 1s ease-out;
+}
+
+.banner__title--m {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-family: "Cedarville Cursive", cursive;
+    animation: fadeInUp 1s ease-out;
+}
+
+.banner__title--m>span {
+    padding: 5px;
+    margin-left: 8px;
+    color: #fff;
+    font-family: "Anta", sans-serif;
+}
+
+.banner__description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease-out;
+}
+
+.link {
+    color: #6285fa;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.link:hover {
+    color: #0056b3;
+}
+
+.smokevideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.banner__right,
+.banner__left,
+.banner__title--l,
+.banner__content,
+.banner__description,
+.banner__description>span,
+.link,
+.banner__title--m {
+    background: transparent;
+}
+
+.banner__description>span {
+    animation: smoothbounceball, bounce-up 1s infinite;
+}
+
+.banner__title--l>#mainText {
+    font-size: 5rem;
+    font-weight: bolder;
+    color: orangered;
+}
+
+@keyframes bounce-up {
+    0% {
+        color: aqua;
+    }
+
+    50% {
+        color: #007bff;
+    }
+
+    100% {
+        color: aqua;
+    }
+}
+
+@keyframes scaleIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.orangeText {
+    color: orange;
+    font-family: inherit;
+    font-weight: bold;
+}
+
+.banner__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 200px;
+}
+
+.downloadButton {
+    padding: 10px 20px;
+    background-color: orange;
+    border: none;
+    color: white;
+    /* font-family: "Anta", sans-serif; */
+    font-family: "Cedarville Cursive", cursive;
+    width: 200px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 14px;
+    animation: fadeInUp 1s ease-out;
+}
+
+.downloadButton:hover {
+    background-color: darkorange;
+}
