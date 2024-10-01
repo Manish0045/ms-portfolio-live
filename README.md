@@ -1,7 +1,7 @@
 # React + Vite
 
 ## Live Link
-<Link src="https://ms-portfolio-live.onrender.com/">
+[Live Link](https://ms-portfolio-live.onrender.com/)
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
