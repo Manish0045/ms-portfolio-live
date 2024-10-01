@@ -12,7 +12,7 @@ function Navigation() {
     return (
         <nav className="navbar">
             <div className="left_navigation">
-                <img src="./Images/transparent_sign.png" alt="Signature" className='sign' onClick={() => scrollToSection("home")} />
+                <img src="./myLogo.png" alt="Signature" height={50} width={50} className='sign' onClick={() => scrollToSection("home")} />
             </div>
             <div className="right_navigation">
                 <ul className="navbar__lists">

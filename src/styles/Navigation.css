@@ -16,7 +16,9 @@
 }
 
 .sign {
-    height: 250px;
+    margin-top: 20px;
+    margin-left: 50px;
+    height: 100px;
     width: auto;
     object-fit: cover;
     cursor: pointer;
