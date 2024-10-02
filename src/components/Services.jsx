@@ -6,34 +6,40 @@ function Services() {
         {
             id: 1,
             title: "Frontend Development",
-            description: "Designing and developing responsive and user-friendly web interfaces using HTML, CSS, and JavaScript frameworks like React, Angular, or Vue.js."
+            description: "Crafting visually appealing and responsive web interfaces using HTML, CSS, and JavaScript frameworks such as React, Angular, or Vue.js. Focus on user experience and accessibility."
         },
         {
             id: 2,
             title: "Backend Development",
-            description: "Building robust server-side applications and APIs using Node.js with frameworks like Express.js, and working with databases such as MongoDB, MySQL, or PostgreSQL."
+            description: "Developing scalable and secure server-side applications and RESTful APIs with Node.js, utilizing frameworks like Express.js, and managing databases such as MongoDB, MySQL, or PostgreSQL."
         },
         {
             id: 3,
             title: "Database Management",
-            description: "Designing, implementing, and optimizing databases, including schema design, querying, indexing, and performance tuning."
+            description: "Expertise in designing and optimizing relational and NoSQL databases, including schema design, complex querying, indexing strategies, and performance tuning to ensure data integrity and efficiency."
         },
         {
             id: 4,
-            title: "API Integration",
-            description: "Integrating third-party APIs and services to add functionality, such as payment gateways, social media integration, or data analytics tools."
+            title: "API Development",
+            description: "Creating robust and scalable APIs to enable communication between different software applications, ensuring they are secure, well-documented, and easy to use."
         },
         {
             id: 5,
             title: "Deployment and DevOps",
-            description: "Setting up continuous integration and deployment pipelines, managing server infrastructure, and ensuring scalability, security, and performance of applications."
+            description: "Implementing CI/CD pipelines for automated testing and deployment, managing server infrastructure, and optimizing application performance and security in cloud environments like AWS, Azure, or Google Cloud."
         },
         {
             id: 6,
             title: "Version Control",
-            description: "Using Git for version control, managing code repositories, and collaborating with team members using platforms like GitHub or GitLab."
+            description: "Leveraging Git for effective version control, managing code repositories, and facilitating collaboration among team members using platforms like GitHub and GitLab, ensuring code quality and traceability."
+        },
+        {
+            id: 7,
+            title: "Freelance Development",
+            description: "Offering flexible and tailored development solutions on a freelance basis, working closely with clients to understand their needs and delivering high-quality software solutions across various technologies."
         }
     ];
+
 
     return (
         <section className="services" id="services">

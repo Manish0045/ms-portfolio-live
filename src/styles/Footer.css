@@ -1,19 +1,22 @@
 .footer {
     background-color: #333;
     color: #fff;
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 15px;
+    /* Added some padding for mobile */
 }
 
 .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    /* Allow items to wrap on smaller screens */
 }
 
 .footer-title {
@@ -35,17 +38,33 @@
 
 .social-links a {
     color: #fff;
-    font-size: 24px;
+    display: inline-flex;
+}
+
+.social-links img.social-icon {
+    width: 40px;
+    /* Set a common width */
+    height: 40px;
+    /* Set a common height */
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.social-links img.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.social-links img.social-icon.github {
+    filter: invert(100%);
 }
 
 .footer-right p {
     margin: 0;
 }
 
-/* Add this CSS to your existing Footer.css or your global CSS file */
-
 .scroll-top-button {
     background-color: #007bff;
+    margin-left: 25px;
     color: #fff;
     border: none;
     border-radius: 50%;
@@ -66,6 +85,47 @@
     align-items: center;
 }
 
-.scroll-top-button:focus {
-    outline: none;
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: center;
+        /* Center align for mobile */
+        text-align: center;
+        /* Center text for better readability */
+    }
+
+    .social-links {
+        gap: 15px;
+        /* Reduce gap for smaller screens */
+        margin-top: 10px;
+        /* Add margin for spacing */
+    }
+
+    .footer-title {
+        font-size: 1.25rem;
+        /* Slightly smaller font size */
+    }
+
+    .scroll-top-button {
+        margin-left: 0;
+        /* Remove margin for mobile */
+        margin-top: 10px;
+        /* Add top margin */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-title {
+        font-size: 1.1rem;
+        /* Further reduce font size */
+    }
+
+    .social-links img.social-icon {
+        width: 35px;
+        /* Smaller icon size for very small screens */
+        height: 35px;
+        /* Smaller icon size for very small screens */
+    }
 }

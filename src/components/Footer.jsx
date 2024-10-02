@@ -1,6 +1,11 @@
 import React from 'react';
 import { FaArrowUp } from 'react-icons/fa'; // Import the upward arrow icon
-import "../styles/Footer.css"; // Assuming you have a CSS file for styling
+import "../styles/Footer.css"; // Ensure you have the correct path to your CSS
+import instagramIcon from "/Images/instagram_icon.png"; // Check path
+import facebookIcon from "/Images/facebook_icon.png"; // Check path
+import gmailIcon from "/Images/gmail_icon.png"; // Check path
+import githubIcon from "/Images/github_icon.png";
+import linkedinIcon from "/Images/linkedin_icon.png";
 
 function Footer() {
     // Function to scroll to the top of the page
@@ -18,12 +23,37 @@ function Footer() {
                     <div className="footer-left">
                         <h3 className="footer-title">Connect with Me</h3>
                         <ul className="social-links">
-                            {/* Social media links/icons */}
+                            <li>
+                                <a href="https://www.facebook.com/yourusername" target="_blank" rel="noopener noreferrer">
+                                    <img className="social-icon linkedin" src={linkedinIcon} alt="Facebook" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/yourusername" target="_blank" rel="noopener noreferrer">
+                                    <img className="social-icon" src={instagramIcon} alt="Instagram" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/yourusername" target="_blank" rel="noopener noreferrer">
+                                    <img className="social-icon" src={facebookIcon} alt="Facebook" />
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+                                    <img className="social-icon github" src={githubIcon} alt="GitHub" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:your-email@example.com" target="_blank" rel="noopener noreferrer">
+                                    <img className="social-icon" src={gmailIcon} alt="Gmail" />
+                                </a>
+                            </li>
                         </ul>
                     </div>
                     <div className="footer-right">
                         <p>&copy; 2024 Your Name. All rights reserved.</p>
-                        <button className="scroll-top-button" onClick={scrollToTop}>
+                        <button className="scroll-top-button" onClick={scrollToTop} aria-label="Scroll to top">
                             <FaArrowUp />
                         </button>
                     </div>

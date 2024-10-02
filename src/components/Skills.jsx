@@ -10,6 +10,12 @@ import gitImage from "../assets/Logos/git.png";
 import gitHubImage from "../assets/Logos/github.png";
 import reactImage from "../assets/Logos/react.png";
 import postmanImage from "../assets/Logos/postman.png";
+import djangoImage from "../assets/Logos/django.png";
+import flutterImage from "../assets/Logos/flutter.png";
+import firebseImage from "../assets/Logos/firebase.png";
+import htmlImage from "../assets/Logos/HTML.png";
+import cssImage from "../assets/Logos/CSS.png";
+import dartImage from "../assets/Logos/dart.png";
 
 const skills = [
     {
@@ -35,7 +41,7 @@ const skills = [
     {
         id: 5,
         name: "Django",
-        imageUrl: "https://via.placeholder.com/150", // Sample image URL
+        imageUrl: djangoImage, // Sample image URL
     },
     {
         id: 6,
@@ -49,28 +55,48 @@ const skills = [
     },
     {
         id: 8,
-        name: "GitLab",
-        imageUrl: "https://via.placeholder.com/150", // Sample image URL
-    },
-    {
-        id: 9,
         name: "Postman",
         imageUrl: postmanImage, // Sample image URL
     },
     {
-        id: 10,
+        id: 9,
         name: "React.js",
         imageUrl: reactImage, // Sample image URL
     },
     {
-        id: 11,
+        id: 10,
         name: "MySQL",
         imageUrl: mySQLImage, // Sample image URL
     },
     {
-        id: 12,
+        id: 11,
         name: "MongoDB",
         imageUrl: mongoDBImage, // Sample image URL
+    },
+    {
+        id: 11,
+        name: "Flutter",
+        imageUrl: flutterImage, // Sample image URL
+    },
+    {
+        id: 12,
+        name: "Firebase",
+        imageUrl: firebseImage, // Sample image URL
+    },
+    {
+        id: 13,
+        name: "HTML",
+        imageUrl: htmlImage, // Sample image URL
+    },
+    {
+        id: 14,
+        name: "CSS",
+        imageUrl: cssImage, // Sample image URL
+    },
+    {
+        id: 15,
+        name: "Dart Programming",
+        imageUrl: dartImage, // Sample image URL
     },
     // Add more skills as needed
 ];
