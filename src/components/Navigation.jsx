@@ -23,6 +23,9 @@ function Navigation() {
                         <button onClick={() => scrollToSection("about")} className="navbar__link">About</button>
                     </li>
                     <li className="navbar__list">
+                        <button onClick={() => scrollToSection("timeline")} className="navbar__link">Timeline</button>
+                    </li>
+                    <li className="navbar__list">
                         <button onClick={() => scrollToSection("projects")} className="navbar__link">Projects</button>
                     </li>
                     <li className="navbar__list">

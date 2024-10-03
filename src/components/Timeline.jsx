@@ -5,7 +5,7 @@ import '../styles/Timeline.css';
 
 function Timeline() {
     return (
-        <div className="timeline_container">
+        <div className="timeline_container" id='timeline'>
             <h2 className='timeline-title'>My Career Journey</h2>
             <VerticalTimeline>
 

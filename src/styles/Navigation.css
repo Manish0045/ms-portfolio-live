@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    padding: 10px;
+    padding: 20px;
     z-index: 100;
     position: sticky;
     margin-top: 0;
@@ -32,14 +32,14 @@
     justify-content: end; */
     /* margin-top: -80px; */
     display: flex;
-    width: 500px;
+    width: 600px;
     justify-content: space-evenly;
     list-style: none;
 }
 
-.navbar__list {
-    margin-right: 20px;
-}
+/* .navbar__list {
+    margin-right: 0px;
+} */
 
 .navbar__link {
     /* color: #fff;

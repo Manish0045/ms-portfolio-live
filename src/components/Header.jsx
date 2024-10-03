@@ -2,6 +2,7 @@
 import ReactTypingEffect from 'react-typing-effect';
 import "../styles/Header.css";
 import myResume from "../assets/MANISH_RESUME_2024.pdf";
+import ScrollIndicator from './Scroll_Indicator';
 
 
 const customRenderer = (text, index) => {
@@ -81,8 +82,8 @@ function Header() {
                     <div className="banner__buttons">
                         <h4 onClick={() => scrollToSection("about")} className="link">Read More...</h4>
                         <a href={myResume} download className="downloadButton">Download CV</a>
-
                     </div>
+                    <ScrollIndicator />
                 </div>
             </div>
         </header>
