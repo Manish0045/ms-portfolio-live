@@ -1,50 +1,32 @@
-/* Modal.css */
 .modal-overlay {
     position: fixed;
-    /* Position it to cover the whole screen */
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.7);
-    /* Semi-transparent background */
     display: flex;
-    /* Center the content */
     justify-content: center;
-    /* Center horizontally */
     align-items: center;
-    /* Center vertically */
     z-index: 1000;
-    /* Ensure it appears above other elements */
 }
 
 .modal-content {
     background: white;
-    /* White background for the modal */
     padding: 20px;
-    /* Space inside the modal */
     border-radius: 8px;
-    /* Rounded corners */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    /* Soft shadow */
     text-align: center;
-    /* Center text inside */
     max-width: 500px;
-    /* Limit the width */
     width: 90%;
-    /* Make it responsive */
 }
 
 .modal-content h2 {
     margin: 0;
-    /* Remove default margin */
     font-size: 20px;
-    /* Font size for the message */
     color: #333;
-    /* Dark gray text color */
 }
 
-/* Optional: You can add transitions for a smooth effect */
 .modal-overlay {
     transition: opacity 0.3s ease;
 }
@@ -52,13 +34,10 @@
 .modal-content {
     opacity: 0;
     transform: translateY(-20px);
-    /* Slide effect */
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .modal-overlay.show .modal-content {
     opacity: 1;
-    /* Fade in */
     transform: translateY(0);
-    /* Slide into position */
 }

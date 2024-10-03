@@ -1,7 +1,6 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unescaped-entities */
-import React from 'react';
-import "../styles/About.css"; // Assuming you have a CSS file for styling
+// import React from 'react';
+import "../styles/About.css";
 import Skills from './Skills';
 
 function AboutMe() {

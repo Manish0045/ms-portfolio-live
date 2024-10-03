@@ -1,4 +1,3 @@
-/* Header styles */
 .banner {
     top: 0;
     left: 0;
@@ -25,7 +24,6 @@
     position: relative;
     animation: fadeInFromBackground 1s ease-out forwards;
     z-index: 1;
-    /* Ensure the image stays behind other content */
 }
 
 @keyframes fadeInFromBackground {

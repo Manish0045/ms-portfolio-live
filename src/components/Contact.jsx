@@ -1,19 +1,24 @@
-import React, { useState } from 'react';
+// import React from 'react';
+import { useState } from 'react';
 import "../styles/Contact.css";
 import axios from 'axios';
 import Modal from './Modal';
+import { Snackbar, Alert } from '@mui/material';
+
 
 function ContactUs() {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
     const [isSent, setIsSent] = useState(false);
+    const [openSnackbar, setOpenSnackbar] = useState(false);
 
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
             await sendMessage(name, email, message);
             setIsSent(true); // Show the modal
+            setOpenSnackbar(true);
         } catch (error) {
             console.error("Error during submission:", error);
         }
@@ -25,6 +30,10 @@ function ContactUs() {
             window.location.href = '/'; // Redirect to home after closing
         }, 2000);
     };
+
+    const handleCloseSnackbar = () => {
+        setOpenSnackbar(false);
+    }
 
     return (
         <section className="contact-us" id="contact">
@@ -77,6 +86,16 @@ function ContactUs() {
                                     duration={3000}
                                     onClose={closeModal}
                                 />
+                            )}
+
+                            {isSent && (
+                                <Snackbar
+                                    open={openSnackbar}
+                                    autoHideDuration={3000}
+                                    onClose={handleCloseSnackbar}
+                                >
+                                    <Alert onClose={handleCloseSnackbar} severity='success'>Message Sent Successfully!</Alert>
+                                </Snackbar>
                             )}
                         </div>
                     </div>

@@ -1,7 +1,5 @@
 .skills {
     padding: 50px 0;
-    /* background: #e9cbcb; */
-    /* background-color: aliceblue; */
 }
 
 .section-title {
@@ -19,6 +17,7 @@
     gap: 5rem;
     width: 100%;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .skills-wrapper {
@@ -26,7 +25,6 @@
     overflow-x: auto;
     white-space: nowrap;
     padding: 20px;
-    /* background: #ada3a3; */
 }
 
 .skill-tile {
@@ -45,9 +43,8 @@
 }
 
 .skill-image {
-    width: 100%;
-    height: 150px;
     width: 150px;
+    height: 150px;
     object-fit: cover;
     border-radius: 8px;
 }
@@ -62,22 +59,19 @@
     top: 50%;
     transform: translateY(-50%);
     background-color: transparent;
-    border: none;
+    border: 2px solid rgb(10, 0, 0);
+    border-radius: 50%;
     cursor: pointer;
     font-size: 24px;
     z-index: 999;
+    width: 30px;
+    height: 30px;
 }
 
 .left {
     left: 5px;
-    border: 2px solid rgb(10, 0, 0);
-    border-radius: 50%;
-    width: 30px;
 }
 
 .right {
-    right: 10px;
-    border: 2px solid rgb(10, 0, 0);
-    border-radius: 50%;
-    width: 30px;
+    right: 5px;
 }

@@ -1,0 +1,12 @@
+.timeline_container {
+    background-color: #7cb5ed50;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.timeline-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}

@@ -1,5 +1,6 @@
-// Modal.jsx
-import React, { useEffect } from 'react';
+// import React from 'react';
+import { useEffect } from 'react';
+import PropTypes from "prop-types";
 import '../styles/Modal.css';
 
 const Modal = ({ message, duration, onClose }) => {
@@ -18,5 +19,12 @@ const Modal = ({ message, duration, onClose }) => {
         </div>
     );
 };
+
+Modal.propTypes = {
+    message: PropTypes.string.isRequired,
+    duration: PropTypes.number.isRequired,
+    onClose: PropTypes.func.isRequired,
+};
+
 
 export default Modal;

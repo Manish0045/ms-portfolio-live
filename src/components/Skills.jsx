@@ -1,4 +1,5 @@
-import React, { useRef } from 'react';
+// import React from 'react';
+import { useRef } from 'react';
 import "../styles/Skills.css";
 import nodeImage from "../assets/Logos/node.png";
 import javascriptImage from "../assets/Logos/javascript.png";
@@ -18,87 +19,22 @@ import cssImage from "../assets/Logos/CSS.png";
 import dartImage from "../assets/Logos/dart.png";
 
 const skills = [
-    {
-        id: 1,
-        name: "Node.js",
-        imageUrl: nodeImage, // Sample image URL
-    },
-    {
-        id: 2,
-        name: "Express.js",
-        imageUrl: expressImage, // Sample image URL
-    },
-    {
-        id: 3,
-        name: "JavaScript",
-        imageUrl: javascriptImage, // Sample image URL
-    },
-    {
-        id: 4,
-        name: "Python",
-        imageUrl: pythonImage, // Sample image URL
-    },
-    {
-        id: 5,
-        name: "Django",
-        imageUrl: djangoImage, // Sample image URL
-    },
-    {
-        id: 6,
-        name: "Git",
-        imageUrl: gitImage, // Sample image URL
-    },
-    {
-        id: 7,
-        name: "GitHub",
-        imageUrl: gitHubImage, // Sample image URL
-    },
-    {
-        id: 8,
-        name: "Postman",
-        imageUrl: postmanImage, // Sample image URL
-    },
-    {
-        id: 9,
-        name: "React.js",
-        imageUrl: reactImage, // Sample image URL
-    },
-    {
-        id: 10,
-        name: "MySQL",
-        imageUrl: mySQLImage, // Sample image URL
-    },
-    {
-        id: 11,
-        name: "MongoDB",
-        imageUrl: mongoDBImage, // Sample image URL
-    },
-    {
-        id: 11,
-        name: "Flutter",
-        imageUrl: flutterImage, // Sample image URL
-    },
-    {
-        id: 12,
-        name: "Firebase",
-        imageUrl: firebseImage, // Sample image URL
-    },
-    {
-        id: 13,
-        name: "HTML",
-        imageUrl: htmlImage, // Sample image URL
-    },
-    {
-        id: 14,
-        name: "CSS",
-        imageUrl: cssImage, // Sample image URL
-    },
-    {
-        id: 15,
-        name: "Dart Programming",
-        imageUrl: dartImage, // Sample image URL
-    },
-    // Add more skills as needed
+    { id: 1, name: "HTML", imageUrl: htmlImage },
+    { id: 2, name: "CSS", imageUrl: cssImage },
+    { id: 3, name: "JavaScript", imageUrl: javascriptImage },
+    { id: 4, name: "React.js", imageUrl: reactImage },
+    { id: 5, name: "Node.js", imageUrl: nodeImage },
+    { id: 6, name: "Express.js", imageUrl: expressImage },
+    { id: 7, name: "Postman", imageUrl: postmanImage },
+    { id: 8, name: "Python", imageUrl: pythonImage },
+    { id: 9, name: "Flutter", imageUrl: flutterImage },
+    { id: 10, name: "Dart Programming", imageUrl: dartImage },
+    { id: 11, name: "Git", imageUrl: gitImage },
+    { id: 12, name: "GitHub", imageUrl: gitHubImage },
+    { id: 13, name: "MySQL", imageUrl: mySQLImage },
+    { id: 14, name: "MongoDB", imageUrl: mongoDBImage },
+    { id: 15, name: "Firebase", imageUrl: firebseImage },
+    { id: 16, name: "Django", imageUrl: djangoImage },
 ];
 
 const Skills = () => {

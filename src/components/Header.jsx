@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import ReactTypingEffect from 'react-typing-effect';
 import "../styles/Header.css";
 import myResume from "../assets/MANISH_RESUME_2024.pdf";
@@ -12,7 +12,7 @@ const customRenderer = (text, index) => {
                 <span key={wordIndex}>
                     <span className="orangeText">{word.charAt(0).toUpperCase()}</span>
                     <span>{word.slice(1)}</span>
-                    {wordIndex !== words.length - 1 && ' '} {/* Add space if it's not the last word */}
+                    {wordIndex !== words.length - 1 && ' '}
                 </span>
             ))}
         </span>
