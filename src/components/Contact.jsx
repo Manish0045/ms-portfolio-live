@@ -55,6 +55,7 @@ function ContactUs() {
                                         name="name"
                                         placeholder="Your Name"
                                         onChange={(e) => setName(e.target.value)}
+                                        autoComplete='true'
                                         required
                                     />
                                 </div>
@@ -65,6 +66,7 @@ function ContactUs() {
                                         name="email"
                                         placeholder="Your Email"
                                         onChange={(e) => setEmail(e.target.value)}
+                                        autoComplete='true'
                                         required
                                     />
                                 </div>
