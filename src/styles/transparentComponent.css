@@ -7,7 +7,6 @@
     align-items: center;
     background-color: rgba(255, 255, 255, 0.1);
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     overflow-y: auto;
 }
 
@@ -15,7 +14,6 @@
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
-    /* Ensures text and inline elements are centered */
 }
 
 h3 {
@@ -28,7 +26,5 @@ h3 {
     display: flex;
     justify-content: center !important;
     margin: 0 auto;
-    /* Centers the indicator */
     width: 100%;
-    /* Ensures full width usage */
 }

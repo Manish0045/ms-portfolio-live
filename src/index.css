@@ -19,6 +19,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
+  opacity: 0.9;
 }
 
 ::-webkit-scrollbar {
