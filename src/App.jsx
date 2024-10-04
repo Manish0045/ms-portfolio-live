@@ -10,6 +10,7 @@ import About from './components/About';
 import "./index.css";
 import Timeline from './components/Timeline';
 import axios from 'axios';
+import TransparentComponent from './components/transparentComponent';
 
 async function sendMessage(message) {
   const URI = "https://product-crud-app-3f7k.onrender.com/";
@@ -50,6 +51,7 @@ function App() {
       <Header />
       <About />
       <Services />
+      <TransparentComponent />
       <Timeline />
       <Projects />
       <Contact />

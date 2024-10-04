@@ -1,8 +1,10 @@
 .scroll-indicator {
     margin-top: 80px;
     position: absolute;
-    left: 85%;
+    left: 50%;
+    /* Center horizontally */
     transform: translateX(-50%);
+    /* Adjust to center properly */
     text-align: center;
 }
 
