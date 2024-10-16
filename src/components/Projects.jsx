@@ -7,7 +7,6 @@ import blogAppImage from "../assets/project_images/blog_app/blog_splash.png";
 import vibroImage from "../assets/project_images/vibro/vibro_home.png";
 import productCrudImage from "../assets/project_images/product_crud/crud_thumbnail.png";
 
-
 const projects = [
     {
         id: 1,
@@ -63,36 +62,43 @@ function Projects() {
         <section className="projects" id="projects">
             <h2 className="section-title">Projects</h2>
             <div className="projects-container" onScroll={handleScroll}>
-                {projects.map((project, index) => (
-                    <div
-                        key={project.id}
-                        className={`project-tile ${focusedProject === index ? 'focused' : ''}`}
-                    >
-                        <img src={project.imageUrl} alt={project.title} className="project-image" />
-                        <div className="project-info">
-                            <h3 className="project-title">{project.title}</h3>
-                            <div className="project-description">
-                                <p>{project.description}</p>
-                            </div>
-                            <div className="project-buttons">
-                                {
-                                    project.liveDemoUrl &&
-                                    (
-                                        <a href={project.liveDemoUrl} target="_blank" rel="noopener noreferrer" className="project-button">Live Demo</a>
-                                    )
-                                }
-                                {
-                                    project.githubUrl &&
-                                    (
-                                        <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="project-button">GitHub</a>
-                                    )
-                                }
+                {projects.map((project, index) => {
+                    const hasLiveDemo = !!project.liveDemoUrl;
+                    const hasGithub = !!project.githubUrl;
+                    const buttonCount = [hasLiveDemo, hasGithub].filter(Boolean).length;
 
-
+                    return (
+                        <div
+                            key={project.id}
+                            className={`project-tile ${focusedProject === index ? 'focused' : ''}`}
+                        >
+                            <img src={project.imageUrl} alt={project.title} className="project-image" />
+                            <div className="project-info">
+                                <h3 className="project-title">{project.title}</h3>
+                                <div className="project-description">
+                                    <p>{project.description}</p>
+                                </div>
+                                <div className={`project-buttons button-count-${buttonCount}`}>
+                                    {hasLiveDemo && (
+                                        <a href={project.liveDemoUrl} target="_blank" rel="noopener noreferrer" className="project-button">
+                                            Live Demo
+                                        </a>
+                                    )}
+                                    {hasGithub && (
+                                        <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="project-button">
+                                            GitHub
+                                        </a>
+                                    )}
+                                    {!hasLiveDemo && !hasGithub && (
+                                        <button disabled className="project-button disabled">
+                                            No Links Available
+                                        </button>
+                                    )}
+                                </div>
                             </div>
                         </div>
-                    </div>
-                ))}
+                    );
+                })}
             </div>
         </section>
     );

@@ -1,3 +1,4 @@
+/* General Styles */
 .projects {
     padding: 50px 0;
     background-color: #e2e6eb;
@@ -62,10 +63,27 @@
     transition: max-height 0.3s ease;
 }
 
+/* Button Styling */
 .project-buttons {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
+}
+
+/* Full-width button when only one button */
+.project-buttons.button-count-1 .project-button {
+    width: 100%;
+}
+
+/* Split buttons evenly if two are available */
+.project-buttons.button-count-2 .project-button {
+    width: 48%;
+}
+
+/* Disabled button */
+.project-button.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
 }
 
 .project-button {
@@ -76,27 +94,14 @@
     text-decoration: none;
     font-size: 14px;
     text-align: center;
+    transition: background-color 0.3s;
 }
 
 .project-button:hover {
     background-color: #0056b3;
 }
 
-.toggle-description-button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 8px 15px;
-    cursor: pointer;
-    margin-top: 10px;
-    font-size: 14px;
-}
-
-.toggle-description-button:hover {
-    background-color: #0056b3;
-}
-
+/* Responsive Styles */
 @media (max-width: 768px) {
     .project-tile {
         width: calc(50% - 30px);
