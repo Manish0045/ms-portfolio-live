@@ -79,3 +79,33 @@
         transform: translateY(0);
     }
 }
+
+/* Media Query for Mobile Devices */
+@media (max-width: 950px) {
+    .about-details {
+        flex-direction: column;
+        /* Change flex direction to column */
+        align-items: center;
+        /* Center align items */
+        gap: 20px;
+        /* Adjust gap for smaller screens */
+    }
+
+    .profile-img {
+        width: 200px;
+        /* Adjust image size for mobile */
+        height: 200px;
+    }
+
+    .bio {
+        max-width: 100%;
+        /* Allow bio to take full width */
+        text-align: center;
+        /* Center align text on mobile */
+    }
+
+    .section-title {
+        font-size: 2rem;
+        /* Adjust section title font size for mobile */
+    }
+}

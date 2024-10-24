@@ -1,5 +1,7 @@
 // import React from 'react';
 import "../styles/Navigation.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome, faUser, faClock, faProjectDiagram, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 function Navigation() {
     const scrollToSection = (id) => {
@@ -17,19 +19,34 @@ function Navigation() {
             <div className="right_navigation">
                 <ul className="navbar__lists">
                     <li className="navbar__list">
-                        <button onClick={() => scrollToSection("home")} className="navbar__link">Home</button>
+                        <button onClick={() => scrollToSection("home")} className="navbar__link">
+                            <span className="navbar__icon"><FontAwesomeIcon icon={faHome} /></span>
+                            <span className="navbar__text">Home</span>
+                        </button>
                     </li>
                     <li className="navbar__list">
-                        <button onClick={() => scrollToSection("about")} className="navbar__link">About</button>
+                        <button onClick={() => scrollToSection("about")} className="navbar__link">
+                            <span className="navbar__icon"><FontAwesomeIcon icon={faUser} /></span>
+                            <span className="navbar__text">About</span>
+                        </button>
                     </li>
                     <li className="navbar__list">
-                        <button onClick={() => scrollToSection("timeline")} className="navbar__link">Timeline</button>
+                        <button onClick={() => scrollToSection("timeline")} className="navbar__link">
+                            <span className="navbar__icon"><FontAwesomeIcon icon={faClock} /></span>
+                            <span className="navbar__text">Timeline</span>
+                        </button>
                     </li>
                     <li className="navbar__list">
-                        <button onClick={() => scrollToSection("projects")} className="navbar__link">Projects</button>
+                        <button onClick={() => scrollToSection("projects")} className="navbar__link">
+                            <span className="navbar__icon"><FontAwesomeIcon icon={faProjectDiagram} /></span>
+                            <span className="navbar__text">Projects</span>
+                        </button>
                     </li>
                     <li className="navbar__list">
-                        <button onClick={() => scrollToSection("contact")} className="navbar__link">Contact</button>
+                        <button onClick={() => scrollToSection("contact")} className="navbar__link">
+                            <span className="navbar__icon"><FontAwesomeIcon icon={faEnvelope} /></span>
+                            <span className="navbar__text">Contact</span>
+                        </button>
                     </li>
                 </ul>
             </div>

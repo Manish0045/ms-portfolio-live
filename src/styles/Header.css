@@ -181,7 +181,6 @@
     background-color: orange;
     border: none;
     color: white;
-    /* font-family: "Anta", sans-serif; */
     font-family: "Cedarville Cursive", cursive;
     width: 200px;
     font-size: 16px;
@@ -194,4 +193,50 @@
 
 .downloadButton:hover {
     background-color: darkorange;
+}
+
+
+@media (max-width: 600px) {
+    .banner {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+        overflow: hidden;
+    }
+
+    .banner__profile {
+        margin-top: 80px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .banner__title--l {
+        font-size: 2.5rem;
+        margin-top: -40px;
+    }
+
+    .banner__title--m {
+        font-size: 1.1rem;
+        margin-top: -20px;
+    }
+
+    .banner__description {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .banner__buttons {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .downloadButton {
+        width: 100%;
+        max-width: 200px;
+        margin-bottom: 50px;
+    }
 }

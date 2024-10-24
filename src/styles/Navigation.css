@@ -1,6 +1,4 @@
 .navbar {
-    /* background-color: #343a40;
-    padding: 15px 0; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -8,57 +6,105 @@
     padding: 20px;
     z-index: 100;
     position: sticky;
-    margin-top: 0;
     top: 0;
     width: 100%;
     background: transparent;
 }
 
 .sign {
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: 50px;
-    height: 100px;
+    height: 80px;
     width: auto;
     object-fit: cover;
     cursor: pointer;
-    /* overflow: hidden; */
 }
 
 .navbar__lists {
-    /* list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: end; */
-    /* margin-top: -80px; */
     display: flex;
     width: 600px;
     justify-content: space-evenly;
     list-style: none;
 }
 
-/* .navbar__list {
-    margin-right: 0px;
-} */
-
 .navbar__link {
-    /* color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
     text-decoration: none;
-    font-size: 1rem;
-    /* background-color: transparent; */
     color: rgb(182, 241, 235);
     font-weight: 600;
-    font-size: 25px;
-    border: none;
+    font-size: 20px;
     padding: 3px 0px;
     font-family: "Anta", sans-serif;
-    cursor: pointer;
-    background: transparent;
-    /* Text border */
-    -webkit-text-stroke: 0.3px rgb(103, 4, 4);
+    -webkit-text-stroke: 0.3px rgb(182, 7, 7);
     transition: color 0.3s ease-in-out;
 }
 
 .navbar__link:hover {
     color: #c6f214;
+}
+
+
+.navbar__icon {
+    font-size: 20px;
+}
+
+.navbar__text {
+    display: inline-block;
+    font-family: "Anta", sans-serif;
+    font-size: 25px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        position: fixed;
+        bottom: 0;
+        top: auto;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        border-radius: 30px;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 10px;
+        height: 60px;
+        justify-content: space-around;
+        z-index: 999;
+    }
+
+    .navbar__lists {
+        width: auto;
+        display: flex;
+        margin-left: -80px;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        gap: 40px;
+        /* Adjust gap to center align links */
+    }
+
+    .navbar__link {
+        font-size: 18px;
+    }
+
+    .navbar__icon {
+        font-size: 24px;
+    }
+
+    .navbar__text {
+        display: none;
+    }
+
+    .sign {
+        display: none;
+    }
+}
+
+@media(min-width: 780px) {
+    .navbar__icon {
+        display: none;
+    }
 }
