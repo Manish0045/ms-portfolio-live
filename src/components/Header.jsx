@@ -1,11 +1,7 @@
 // import React from 'react';
 import ReactTypingEffect from 'react-typing-effect';
 import "../styles/Header.css";
-<<<<<<< HEAD
 import myResume from "../assets/MANISH_SAHANI_RESUME_2024.pdf";
-=======
-import myResume from "../assets/src/assets/MANISH_SAHANI_RESUME_2024.pdf";
->>>>>>> 5c6f8474f6c202465bdbd1f73246a3944df35d2a
 import ScrollIndicator from './Scroll_Indicator';
 
 
