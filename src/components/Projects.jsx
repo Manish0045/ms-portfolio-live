@@ -33,7 +33,7 @@ const projects = [
     {
         id: 4,
         title: "Vibro",
-        description: "A web application built with Node.js and Express.js, using MySQL as the database. Vibro provides a platform for users to manage their tasks efficiently.",
+        description: "A web application built with Node.js and Express.js, using MySQL as the database. Vibro provides various products including bowl vibrators, doors , table , electromagnetic bowl vibrator.",
         imageUrl: vibroImage,
     },
     {
