@@ -77,7 +77,7 @@ function Header() {
                     </h3>
                     <p className="banner__description">
                         Crafting efficient backend solutions to drive digital innovation
-                        and empower businesses <br /> | <span>Currently designing data-driven backend architectures.</span>
+                        and empower businesses <br /> | <span>Currently designing data-driven backend architectures !</span>
                     </p>
                     <div className="banner__buttons">
                         <h4 onClick={() => scrollToSection("about")} className="link">Read More...</h4>
