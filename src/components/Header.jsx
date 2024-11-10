@@ -1,7 +1,7 @@
 // import React from 'react';
 import ReactTypingEffect from 'react-typing-effect';
 import "../styles/Header.css";
-import myResume from "../assets/src/assets/MANISH_SAHANI_RESUME_2024.pdf.pdf";
+import myResume from "../assets/src/assets/MANISH_SAHANI_RESUME_2024.pdf";
 import ScrollIndicator from './Scroll_Indicator';
 
 
