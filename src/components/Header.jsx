@@ -1,7 +1,11 @@
 // import React from 'react';
 import ReactTypingEffect from 'react-typing-effect';
 import "../styles/Header.css";
+<<<<<<< HEAD
 import myResume from "../assets/MANISH_SAHANI_RESUME_2024.pdf";
+=======
+import myResume from "../assets/src/assets/MANISH_SAHANI_RESUME_2024.pdf";
+>>>>>>> 5c6f8474f6c202465bdbd1f73246a3944df35d2a
 import ScrollIndicator from './Scroll_Indicator';
 
 
@@ -77,7 +81,7 @@ function Header() {
                     </h3>
                     <p className="banner__description">
                         Crafting efficient backend solutions to drive digital innovation
-                        and empower businesses <br /> | <span>Currently designing data-driven backend architectures.</span>
+                        and empower businesses <br /> | <span>Currently designing data-driven backend architectures !</span>
                     </p>
                     <div className="banner__buttons">
                         <h4 onClick={() => scrollToSection("about")} className="link">Read More...</h4>
